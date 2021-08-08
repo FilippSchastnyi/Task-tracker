@@ -1,4 +1,14 @@
 <div class="task">
-  <h3>{{task.text}}</h3>
-  <p>{{task.day}}</p>
+  <div class="task-left">
+    <h3>{{task.text}}</h3>
+    <p>{{task.day}}</p>
+  </div>
+<div class="task-right">
+  <app-button
+  text="remove"
+  color="red"
+  (btnClick)="deleteTask()"
+  >
+  </app-button>
+</div>
 </div>
